@@ -3,21 +3,22 @@ name: CI
 permissions:
   contents: read
 
-on:
-  push:
-    branches:
-      - main
-      - vnext
-      - 'fix/*'
-      - 'feature/*'
-
-  pull_request:
-    branches:
-      - main
-      - vnext
-
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#       - vnext
+#       - 'fix/*'
+#       - 'feature/*'
+# 
+#   pull_request:
+#     branches:
+#       - main
+#       - vnext
+# 
+#   workflow_dispatch:
+# 
 defaults:
   run:
     shell: pwsh

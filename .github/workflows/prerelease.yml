@@ -3,10 +3,11 @@ name: prerelease
 permissions:
   contents: read
 
-on:
-  release:
-    types: [ prereleased ]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   release:
+#     types: [ prereleased ]
+# 
 defaults:
   run:
     shell: pwsh

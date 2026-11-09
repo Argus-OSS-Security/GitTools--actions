@@ -3,10 +3,11 @@ name: Update examples version
 permissions:
   contents: read
 
-on:
-  repository_dispatch:
-    types: [ update-examples ]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   repository_dispatch:
+#     types: [ update-examples ]
+# 
 defaults:
   run:
     shell: pwsh

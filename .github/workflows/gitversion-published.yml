@@ -3,10 +3,11 @@ name: Update GitVersion version
 permissions:
   contents: read
 
-on:
-  repository_dispatch:
-    types: [ gitversion-release-published ]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   repository_dispatch:
+#     types: [ gitversion-release-published ]
+# 
 defaults:
   run:
     shell: pwsh
